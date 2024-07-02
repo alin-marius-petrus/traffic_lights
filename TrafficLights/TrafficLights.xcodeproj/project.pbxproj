@@ -26,6 +26,10 @@
 		6A7EA77C2C3406E500D083C3 /* TrafficLightsViewControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA77B2C3406E500D083C3 /* TrafficLightsViewControllerFactoryImpl.swift */; };
 		6A7EA77E2C3408BC00D083C3 /* TrafficLightsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA77D2C3408BC00D083C3 /* TrafficLightsViewControllerFactory.swift */; };
 		6A7EA7912C3427DF00D083C3 /* TrafficLightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA7902C3427DF00D083C3 /* TrafficLightState.swift */; };
+		6A7EA7992C34463600D083C3 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA7982C34463600D083C3 /* UIColor+Helpers.swift */; };
+		6A7EA79B2C34479700D083C3 /* TrafficLightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA79A2C34479700D083C3 /* TrafficLightsView.swift */; };
+		6A7EA79D2C3447FF00D083C3 /* TrafficLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA79C2C3447FF00D083C3 /* TrafficLightView.swift */; };
+		6A7EA79F2C34486600D083C3 /* TrafficLightViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA79E2C34486600D083C3 /* TrafficLightViewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		6A7EA77B2C3406E500D083C3 /* TrafficLightsViewControllerFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsViewControllerFactoryImpl.swift; sourceTree = "<group>"; };
 		6A7EA77D2C3408BC00D083C3 /* TrafficLightsViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsViewControllerFactory.swift; sourceTree = "<group>"; };
 		6A7EA7902C3427DF00D083C3 /* TrafficLightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightState.swift; sourceTree = "<group>"; };
+		6A7EA7982C34463600D083C3 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		6A7EA79A2C34479700D083C3 /* TrafficLightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsView.swift; sourceTree = "<group>"; };
+		6A7EA79C2C3447FF00D083C3 /* TrafficLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightView.swift; sourceTree = "<group>"; };
+		6A7EA79E2C34486600D083C3 /* TrafficLightViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 		6A7EA7292C33ED3600D083C3 /* TrafficLights */ = {
 			isa = PBXGroup;
 			children = (
+				6A7EA7972C34462300D083C3 /* Extensions */,
 				6A7EA77A2C3406C500D083C3 /* ViewControllerFactories */,
 				6A7EA7432C33ED6200D083C3 /* Views */,
 				6A7EA7422C33ED5A00D083C3 /* ViewControllers */,
@@ -100,6 +109,7 @@
 		6A7EA73F2C33ED4700D083C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6A7EA79E2C34486600D083C3 /* TrafficLightViewConfiguration.swift */,
 				6A7EA7682C33F99E00D083C3 /* CarModel.swift */,
 				6A7EA7452C33EDB700D083C3 /* TrafficLight.swift */,
 				6A7EA76C2C33FC8900D083C3 /* CarModelNameCountValidator.swift */,
@@ -141,6 +151,8 @@
 		6A7EA7432C33ED6200D083C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6A7EA79A2C34479700D083C3 /* TrafficLightsView.swift */,
+				6A7EA79C2C3447FF00D083C3 /* TrafficLightView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +164,14 @@
 				6A7EA77D2C3408BC00D083C3 /* TrafficLightsViewControllerFactory.swift */,
 			);
 			path = ViewControllerFactories;
+			sourceTree = "<group>";
+		};
+		6A7EA7972C34462300D083C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6A7EA7982C34463600D083C3 /* UIColor+Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +188,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6A7EA7962C34426E00D083C3 /* PBXTargetDependency */,
 			);
 			name = TrafficLights;
 			productName = TrafficLights;
@@ -198,6 +219,9 @@
 				Base,
 			);
 			mainGroup = 6A7EA71E2C33ED3600D083C3;
+			packageReferences = (
+				6A7EA7942C34425500D083C3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			productRefGroup = 6A7EA7282C33ED3600D083C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,6 +251,7 @@
 				6A7EA76F2C33FD8500D083C3 /* CarModelNameValidator.swift in Sources */,
 				6A7EA7742C3405CF00D083C3 /* SemaphoreViewModel.swift in Sources */,
 				6A7EA76B2C33FBAE00D083C3 /* CarDetailViewModel.swift in Sources */,
+				6A7EA79D2C3447FF00D083C3 /* TrafficLightView.swift in Sources */,
 				6A7EA74C2C33EFCC00D083C3 /* CarModelViewController.swift in Sources */,
 				6A7EA77E2C3408BC00D083C3 /* TrafficLightsViewControllerFactory.swift in Sources */,
 				6A7EA77C2C3406E500D083C3 /* TrafficLightsViewControllerFactoryImpl.swift in Sources */,
@@ -234,9 +259,12 @@
 				6A7EA7912C3427DF00D083C3 /* TrafficLightState.swift in Sources */,
 				6A7EA7672C33F6BF00D083C3 /* TrafficLightsCoordinator.swift in Sources */,
 				6A7EA74A2C33EEA900D083C3 /* Coordinator.swift in Sources */,
+				6A7EA79F2C34486600D083C3 /* TrafficLightViewConfiguration.swift in Sources */,
+				6A7EA79B2C34479700D083C3 /* TrafficLightsView.swift in Sources */,
 				6A7EA72B2C33ED3600D083C3 /* AppDelegate.swift in Sources */,
 				6A7EA7692C33F99E00D083C3 /* CarModel.swift in Sources */,
 				6A7EA76D2C33FC8900D083C3 /* CarModelNameCountValidator.swift in Sources */,
+				6A7EA7992C34463600D083C3 /* UIColor+Helpers.swift in Sources */,
 				6A7EA7502C33F1CD00D083C3 /* TrafficRoute.swift in Sources */,
 				6A7EA72D2C33ED3600D083C3 /* SceneDelegate.swift in Sources */,
 				6A7EA7712C34053100D083C3 /* TrafficLightsRouter.swift in Sources */,
@@ -245,6 +273,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A7EA7962C34426E00D083C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6A7EA7952C34426E00D083C3 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6A7EA7352C33ED3900D083C3 /* LaunchScreen.storyboard */ = {
@@ -453,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A7EA7942C34425500D083C3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A7EA7952C34426E00D083C3 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A7EA7942C34425500D083C3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A7EA71F2C33ED3600D083C3 /* Project object */;
 }

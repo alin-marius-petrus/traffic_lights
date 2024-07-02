@@ -7,17 +7,29 @@
 
 import Foundation
 
-final class TrafficLightState: IteratorProtocol {
+struct TrafficLightState: AsyncSequence, AsyncIteratorProtocol {
+    typealias AsyncIterator = TrafficLightState
+    typealias Element = TrafficLight
+    
+    // MARK: - Properties
+    
     private(set) var currentLight: TrafficLight
     private(set) var targetLight: TrafficLight
     
-    init(currentLight: TrafficLight = .red,
-         targetLight: TrafficLight = .green) {
-        self.currentLight = currentLight
-        self.targetLight = targetLight
+    init() {
+        self.currentLight = .red
+        self.targetLight = .green
     }
     
-    func next() -> TrafficLight? {
+    // MARK: - Protocol conformance
+    
+    mutating func next() async -> TrafficLight? {
+        guard !Task.isCancelled else {
+            return nil
+        }
+        
+        try? await Task.sleep(nanoseconds: UInt64(self.currentLight.duration) * 1_000_000_000)
+        
         switch self.currentLight {
         case .red, .green:
             self.currentLight = .orange
@@ -36,4 +48,9 @@ final class TrafficLightState: IteratorProtocol {
         
         return self.currentLight
     }
+    
+    func makeAsyncIterator() -> TrafficLightState {
+        self
+    }
+    
 }

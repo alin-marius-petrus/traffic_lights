@@ -7,6 +7,7 @@
 
 import UIKit
 
+// swiftlint: disable line_length
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -19,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        self.coordinator = TrafficLightsCoordinator(window: window)
+        self.coordinator = TrafficLightsCoordinator(window: window, 
+                                                    factory: TrafficLightsViewControllerFactoryImpl())
         self.coordinator?.start()
         self.window = window
     }
@@ -52,6 +54,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
 }
 
+// swiftlint: enable line_length

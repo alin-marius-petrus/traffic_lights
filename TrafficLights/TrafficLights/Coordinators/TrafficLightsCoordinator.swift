@@ -7,17 +7,24 @@
 
 import UIKit
 
+@MainActor
 final class TrafficLightsCoordinator: NSObject, Coordinator {
+    
+    // MARK: - Properties
+    
     weak var parent: Coordinator?
     var children: [Coordinator] = []
     private var factory: TrafficLightsViewControllerFactory
     private var navigationPath: [TrafficRoute] = [.carModel]
     
     private weak var window: UIWindow?
+    // swiftlint:disable:next implicitly_unwrapped_optional
     private var navigationController: UINavigationController!
     
+    // MARK: - Initializers
+    
     init(window: UIWindow,
-         factory: TrafficLightsViewControllerFactory = TrafficLightsViewControllerFactoryImpl()) {
+         factory: TrafficLightsViewControllerFactory) {
         self.window = window
         self.factory = factory
         
@@ -28,6 +35,8 @@ final class TrafficLightsCoordinator: NSObject, Coordinator {
         
         self.navigationController.delegate = self
     }
+    
+    // MARK: - Public functions
     
     func start() {
         self.window?.rootViewController = self.navigationController

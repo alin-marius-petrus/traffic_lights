@@ -13,6 +13,7 @@ final class CarModelViewController: UIViewController {
     private var disposables: Set<AnyCancellable> = Set()
     private let button: UIButton = UIButton(type: .system)
     private let textView: UITextView = UITextView()
+    private let textFont = UIFont.systemFont(ofSize: 18)
     
     // MARK: - Initializers
     
@@ -28,7 +29,6 @@ final class CarModelViewController: UIViewController {
         fatalError("Use the designated initializer with a datasource")
     }
     
-
     init(viewModel: CarDetailViewModel) {
         self.viewModel = viewModel
         
@@ -53,7 +53,7 @@ final class CarModelViewController: UIViewController {
         self.textView.textColor = .black
         self.textView.layer.borderWidth = 1.0
         self.textView.layer.borderColor = UIColor.lightGray.cgColor
-        self.textView.font = UIFont.systemFont(ofSize: 18)
+        self.textView.font = self.textFont
         self.textView.delegate = self
         self.button.setTitle("Start Driving", for: .normal)
         self.button.addTarget(self, action: #selector(onStartDriving), for: .touchUpInside)
@@ -74,15 +74,21 @@ final class CarModelViewController: UIViewController {
 
 private extension CarModelViewController {
     
-    @objc func onStartDriving() {
+    @objc 
+    func onStartDriving() {
         self.viewModel.onStartDriving()
     }
     
     func addConstraints() {
-        self.textView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 32.0).isActive = true
-        self.textView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -32.0).isActive = true
-        self.textView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 32.0).isActive = true
-        self.textView.heightAnchor.constraint(equalToConstant: UIFont.systemFont(ofSize: 18).lineHeight + 16).isActive = true
+        self.textView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, 
+                                               constant: 32.0).isActive = true
+        self.textView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,
+                                                constant: -32.0).isActive = true
+        self.textView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor,
+                                           constant: 32.0).isActive = true
+        let insets = self.textView.textContainerInset.top + self.textView.textContainerInset.bottom
+        let height = self.textFont.lineHeight + insets
+        self.textView.heightAnchor.constraint(equalToConstant: height).isActive = true
         
         self.button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.button.topAnchor.constraint(equalTo: self.textView.bottomAnchor, constant: 32.0).isActive = true

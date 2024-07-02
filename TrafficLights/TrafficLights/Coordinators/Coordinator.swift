@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 protocol Coordinator: AnyObject {
     var parent: Coordinator? { get set }
     var children: [Coordinator] { get set }
@@ -25,7 +26,7 @@ extension Coordinator {
     }
     
     func onComplete() {
-        self.parent?.children.removeAll(where: { $0 === self })
+        self.parent?.children.removeAll { $0 === self }
         self.parent = nil
     }
 }

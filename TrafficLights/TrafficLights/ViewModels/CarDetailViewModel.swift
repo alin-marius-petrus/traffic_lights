@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 final class CarDetailViewModel {
     
     enum State: Equatable {
@@ -14,16 +15,16 @@ final class CarDetailViewModel {
         case valid(CarModel)
         
         var isValid: Bool {
-            self  != .invalid
+            self != .invalid
         }
     }
     
     // MARK: - Properties
-  
+    
     private var carModelName: String? {
         didSet {
             if self.validator.isValidName(self.carModelName),
-                let carModel = CarModel(name: self.carModelName) {
+               let carModel = CarModel(name: self.carModelName) {
                 self.state = .valid(carModel)
             } else {
                 self.state = .invalid
@@ -39,7 +40,7 @@ final class CarDetailViewModel {
     // MARK: - Initializer
     
     init(router: TrafficLightsRouter,
-        validator: CarModelNameValidator = CarModelNameCountValidator()) {
+         validator: CarModelNameValidator = CarModelNameCountValidator()) {
         self.router = router
         self.validator = validator
     }

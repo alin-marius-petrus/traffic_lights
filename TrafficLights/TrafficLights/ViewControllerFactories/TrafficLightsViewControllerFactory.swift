@@ -7,7 +7,10 @@
 
 import UIKit
 
+@MainActor
 protocol TrafficLightsViewControllerFactory {
+    
     func viewController(forRoute route: TrafficRoute,
                         withCoordinator coordinator: TrafficLightsCoordinator) -> UIViewController
+    
 }

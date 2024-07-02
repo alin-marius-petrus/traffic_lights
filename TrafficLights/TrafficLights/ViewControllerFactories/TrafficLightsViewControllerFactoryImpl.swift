@@ -13,9 +13,12 @@ final class TrafficLightsViewControllerFactoryImpl: TrafficLightsViewControllerF
                         withCoordinator coordinator: TrafficLightsCoordinator) -> UIViewController {
         switch route {
         case .carModel:
-            return CarModelViewController(viewModel: CarDetailViewModel(router: coordinator))
+            let viewModel = CarDetailViewModel(router: coordinator)
+            
+            return CarModelViewController(viewModel: viewModel)
         case .semaphore(let model):
             let viewModel = SemaphoreViewModel(carModel: model)
+            
             return SemaphoreViewController(viewModel: viewModel)
         }
     }
