@@ -7,19 +7,19 @@
 
 import Foundation
 
-struct TrafficLightsTimingConfiguration {
+struct TrafficLightsTimingConfiguration: LightTimingConfiguration {
     
     // MARK: - Properties
     
-    let redDuration: Int
-    let orangeDuration: Int
-    let greenDuration: Int
+    let redDuration: Double
+    let orangeDuration: Double
+    let greenDuration: Double
     
     // MARK: - Initializers
     
-    init(redDuration: Int, 
-         orangeDuration: Int,
-         greenDuration: Int) {
+    init(redDuration: Double,
+         orangeDuration: Double,
+         greenDuration: Double) {
         self.redDuration = redDuration
         self.orangeDuration = orangeDuration
         self.greenDuration = greenDuration
@@ -33,7 +33,7 @@ struct TrafficLightsTimingConfiguration {
     
     // MARK: - Public functions
     
-    func duration(forLight light: TrafficLight) -> Int {
+    func duration(forLight light: TrafficLight) -> Double {
         switch light {
         case .red:
             return self.redDuration

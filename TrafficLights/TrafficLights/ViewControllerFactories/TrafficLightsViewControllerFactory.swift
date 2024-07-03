@@ -11,6 +11,6 @@ import UIKit
 protocol TrafficLightsViewControllerFactory {
     
     func viewController(forRoute route: TrafficRoute,
-                        withCoordinator coordinator: TrafficLightsCoordinator) -> UIViewController
+                        withRouter router: TrafficLightsRouter) -> UIViewController
     
 }

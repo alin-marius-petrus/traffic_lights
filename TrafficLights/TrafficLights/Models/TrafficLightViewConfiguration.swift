@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct TrafficLightViewConfiguration {
+struct TrafficLightViewConfiguration: Equatable {
     let color: UIColor
     let activeColor: UIColor
     var isActive: Bool

@@ -10,10 +10,10 @@ import UIKit
 final class TrafficLightsViewControllerFactoryImpl: TrafficLightsViewControllerFactory {
     
     func viewController(forRoute route: TrafficRoute,
-                        withCoordinator coordinator: TrafficLightsCoordinator) -> UIViewController {
+                        withRouter router: TrafficLightsRouter) -> UIViewController {
         switch route {
         case .carModel:
-            let viewModel = CarDetailViewModel(router: coordinator)
+            let viewModel = CarDetailViewModel(router: router)
             
             return CarModelViewController(viewModel: viewModel)
         case .semaphore(let model):

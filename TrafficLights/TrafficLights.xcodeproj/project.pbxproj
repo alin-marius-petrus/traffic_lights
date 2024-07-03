@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6A7BC4042C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4032C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift */; };
+		6A7BC4132C353073006D2045 /* CarModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4122C353073006D2045 /* CarModelTests.swift */; };
+		6A7BC4152C35330E006D2045 /* TrafficLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4142C35330E006D2045 /* TrafficLightTests.swift */; };
+		6A7BC4172C3533EA006D2045 /* CarModelNameCountValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4162C3533EA006D2045 /* CarModelNameCountValidatorTests.swift */; };
+		6A7BC41B2C3538BB006D2045 /* TrafficLightsTimingConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC41A2C3538BB006D2045 /* TrafficLightsTimingConfigurationTests.swift */; };
+		6A7BC41D2C353EBB006D2045 /* TrafficLightStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC41C2C353EBB006D2045 /* TrafficLightStateTests.swift */; };
+		6A7BC41F2C3542E3006D2045 /* LightTimingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC41E2C3542E3006D2045 /* LightTimingConfiguration.swift */; };
+		6A7BC4222C354348006D2045 /* MockLightTimingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4212C354348006D2045 /* MockLightTimingConfiguration.swift */; };
+		6A7BC4242C354761006D2045 /* TrafficLightViewConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4232C354761006D2045 /* TrafficLightViewConfigurationTests.swift */; };
+		6A7BC4262C3548F2006D2045 /* MockTrafficLightsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4252C3548F2006D2045 /* MockTrafficLightsRouter.swift */; };
+		6A7BC4282C354949006D2045 /* MockCarModelNameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4272C354949006D2045 /* MockCarModelNameValidator.swift */; };
+		6A7BC42A2C3549BE006D2045 /* CarDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4292C3549BE006D2045 /* CarDetailViewModelTests.swift */; };
+		6A7BC42E2C355007006D2045 /* SemaphoreViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC42D2C355007006D2045 /* SemaphoreViewModelTests.swift */; };
+		6A7BC4302C3554D4006D2045 /* TrafficLightsViewControllerFactoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC42F2C3554D4006D2045 /* TrafficLightsViewControllerFactoryImplTests.swift */; };
 		6A7EA72B2C33ED3600D083C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA72A2C33ED3600D083C3 /* AppDelegate.swift */; };
 		6A7EA72D2C33ED3600D083C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA72C2C33ED3600D083C3 /* SceneDelegate.swift */; };
 		6A7EA7342C33ED3900D083C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7EA7332C33ED3900D083C3 /* Assets.xcassets */; };
@@ -33,8 +46,32 @@
 		6A7EA79F2C34486600D083C3 /* TrafficLightViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA79E2C34486600D083C3 /* TrafficLightViewConfiguration.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A7BC40D2C35305E006D2045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A7EA71F2C33ED3600D083C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A7EA7262C33ED3600D083C3;
+			remoteInfo = TrafficLights;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6A7BC4032C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsTimingConfiguration.swift; sourceTree = "<group>"; };
+		6A7BC4092C35305E006D2045 /* TrafficLightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7BC4122C353073006D2045 /* CarModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelTests.swift; sourceTree = "<group>"; };
+		6A7BC4142C35330E006D2045 /* TrafficLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightTests.swift; sourceTree = "<group>"; };
+		6A7BC4162C3533EA006D2045 /* CarModelNameCountValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelNameCountValidatorTests.swift; sourceTree = "<group>"; };
+		6A7BC41A2C3538BB006D2045 /* TrafficLightsTimingConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsTimingConfigurationTests.swift; sourceTree = "<group>"; };
+		6A7BC41C2C353EBB006D2045 /* TrafficLightStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightStateTests.swift; sourceTree = "<group>"; };
+		6A7BC41E2C3542E3006D2045 /* LightTimingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTimingConfiguration.swift; sourceTree = "<group>"; };
+		6A7BC4212C354348006D2045 /* MockLightTimingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLightTimingConfiguration.swift; sourceTree = "<group>"; };
+		6A7BC4232C354761006D2045 /* TrafficLightViewConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewConfigurationTests.swift; sourceTree = "<group>"; };
+		6A7BC4252C3548F2006D2045 /* MockTrafficLightsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrafficLightsRouter.swift; sourceTree = "<group>"; };
+		6A7BC4272C354949006D2045 /* MockCarModelNameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCarModelNameValidator.swift; sourceTree = "<group>"; };
+		6A7BC4292C3549BE006D2045 /* CarDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModelTests.swift; sourceTree = "<group>"; };
+		6A7BC42D2C355007006D2045 /* SemaphoreViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreViewModelTests.swift; sourceTree = "<group>"; };
+		6A7BC42F2C3554D4006D2045 /* TrafficLightsViewControllerFactoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsViewControllerFactoryImplTests.swift; sourceTree = "<group>"; };
 		6A7EA7272C33ED3600D083C3 /* TrafficLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7EA72A2C33ED3600D083C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7EA72C2C33ED3600D083C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +100,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A7BC4062C35305E006D2045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A7EA7242C33ED3600D083C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +117,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A7BC40A2C35305E006D2045 /* TrafficLightsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A7BC4202C354337006D2045 /* Mocks */,
+				6A7BC4122C353073006D2045 /* CarModelTests.swift */,
+				6A7BC4142C35330E006D2045 /* TrafficLightTests.swift */,
+				6A7BC4162C3533EA006D2045 /* CarModelNameCountValidatorTests.swift */,
+				6A7BC41A2C3538BB006D2045 /* TrafficLightsTimingConfigurationTests.swift */,
+				6A7BC41C2C353EBB006D2045 /* TrafficLightStateTests.swift */,
+				6A7BC4232C354761006D2045 /* TrafficLightViewConfigurationTests.swift */,
+				6A7BC4292C3549BE006D2045 /* CarDetailViewModelTests.swift */,
+				6A7BC42D2C355007006D2045 /* SemaphoreViewModelTests.swift */,
+				6A7BC42F2C3554D4006D2045 /* TrafficLightsViewControllerFactoryImplTests.swift */,
+			);
+			path = TrafficLightsTests;
+			sourceTree = "<group>";
+		};
+		6A7BC4202C354337006D2045 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7BC4212C354348006D2045 /* MockLightTimingConfiguration.swift */,
+				6A7BC4252C3548F2006D2045 /* MockTrafficLightsRouter.swift */,
+				6A7BC4272C354949006D2045 /* MockCarModelNameValidator.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		6A7EA71E2C33ED3600D083C3 = {
 			isa = PBXGroup;
 			children = (
 				6A7EA7292C33ED3600D083C3 /* TrafficLights */,
+				6A7BC40A2C35305E006D2045 /* TrafficLightsTests */,
 				6A7EA7282C33ED3600D083C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7EA7272C33ED3600D083C3 /* TrafficLights.app */,
+				6A7BC4092C35305E006D2045 /* TrafficLightsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +191,7 @@
 				6A7EA76E2C33FD8500D083C3 /* CarModelNameValidator.swift */,
 				6A7EA7902C3427DF00D083C3 /* TrafficLightState.swift */,
 				6A7BC4032C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift */,
+				6A7BC41E2C3542E3006D2045 /* LightTimingConfiguration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +254,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A7BC4082C35305E006D2045 /* TrafficLightsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A7BC40F2C35305E006D2045 /* Build configuration list for PBXNativeTarget "TrafficLightsTests" */;
+			buildPhases = (
+				6A7BC4052C35305E006D2045 /* Sources */,
+				6A7BC4062C35305E006D2045 /* Frameworks */,
+				6A7BC4072C35305E006D2045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A7BC42C2C354D9D006D2045 /* PBXTargetDependency */,
+				6A7BC40E2C35305E006D2045 /* PBXTargetDependency */,
+			);
+			name = TrafficLightsTests;
+			productName = TrafficLightsTests;
+			productReference = 6A7BC4092C35305E006D2045 /* TrafficLightsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6A7EA7262C33ED3600D083C3 /* TrafficLights */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A7EA73B2C33ED3900D083C3 /* Build configuration list for PBXNativeTarget "TrafficLights" */;
@@ -208,6 +301,10 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					6A7BC4082C35305E006D2045 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 6A7EA7262C33ED3600D083C3;
+					};
 					6A7EA7262C33ED3600D083C3 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -230,11 +327,19 @@
 			projectRoot = "";
 			targets = (
 				6A7EA7262C33ED3600D083C3 /* TrafficLights */,
+				6A7BC4082C35305E006D2045 /* TrafficLightsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A7BC4072C35305E006D2045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A7EA7252C33ED3600D083C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +352,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A7BC4052C35305E006D2045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7BC4172C3533EA006D2045 /* CarModelNameCountValidatorTests.swift in Sources */,
+				6A7BC4222C354348006D2045 /* MockLightTimingConfiguration.swift in Sources */,
+				6A7BC4302C3554D4006D2045 /* TrafficLightsViewControllerFactoryImplTests.swift in Sources */,
+				6A7BC4152C35330E006D2045 /* TrafficLightTests.swift in Sources */,
+				6A7BC42E2C355007006D2045 /* SemaphoreViewModelTests.swift in Sources */,
+				6A7BC4132C353073006D2045 /* CarModelTests.swift in Sources */,
+				6A7BC41B2C3538BB006D2045 /* TrafficLightsTimingConfigurationTests.swift in Sources */,
+				6A7BC4262C3548F2006D2045 /* MockTrafficLightsRouter.swift in Sources */,
+				6A7BC42A2C3549BE006D2045 /* CarDetailViewModelTests.swift in Sources */,
+				6A7BC4282C354949006D2045 /* MockCarModelNameValidator.swift in Sources */,
+				6A7BC4242C354761006D2045 /* TrafficLightViewConfigurationTests.swift in Sources */,
+				6A7BC41D2C353EBB006D2045 /* TrafficLightStateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A7EA7232C33ED3600D083C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +381,7 @@
 				6A7EA79D2C3447FF00D083C3 /* TrafficLightView.swift in Sources */,
 				6A7EA74C2C33EFCC00D083C3 /* CarModelViewController.swift in Sources */,
 				6A7EA77E2C3408BC00D083C3 /* TrafficLightsViewControllerFactory.swift in Sources */,
+				6A7BC41F2C3542E3006D2045 /* LightTimingConfiguration.swift in Sources */,
 				6A7EA77C2C3406E500D083C3 /* TrafficLightsViewControllerFactoryImpl.swift in Sources */,
 				6A7EA74E2C33EFF800D083C3 /* SemaphoreViewController.swift in Sources */,
 				6A7EA7912C3427DF00D083C3 /* TrafficLightState.swift in Sources */,
@@ -279,6 +404,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6A7BC40E2C35305E006D2045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A7EA7262C33ED3600D083C3 /* TrafficLights */;
+			targetProxy = 6A7BC40D2C35305E006D2045 /* PBXContainerItemProxy */;
+		};
+		6A7BC42C2C354D9D006D2045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6A7BC42B2C354D9D006D2045 /* SwiftLintBuildToolPlugin */;
+		};
 		6A7EA7962C34426E00D083C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 6A7EA7952C34426E00D083C3 /* SwiftLintBuildToolPlugin */;
@@ -297,6 +431,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A7BC4102C35305E006D2045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67H5W5F3SW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alin.petrus.TrafficLightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficLights.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrafficLights";
+			};
+			name = Debug;
+		};
+		6A7BC4112C35305E006D2045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67H5W5F3SW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alin.petrus.TrafficLightsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficLights.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrafficLights";
+			};
+			name = Release;
+		};
 		6A7EA7392C33ED3900D083C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,6 +643,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A7BC40F2C35305E006D2045 /* Build configuration list for PBXNativeTarget "TrafficLightsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7BC4102C35305E006D2045 /* Debug */,
+				6A7BC4112C35305E006D2045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6A7EA7222C33ED3600D083C3 /* Build configuration list for PBXProject "TrafficLights" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -505,6 +684,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6A7BC42B2C354D9D006D2045 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A7EA7942C34425500D083C3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
 		6A7EA7952C34426E00D083C3 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6A7EA7942C34425500D083C3 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;

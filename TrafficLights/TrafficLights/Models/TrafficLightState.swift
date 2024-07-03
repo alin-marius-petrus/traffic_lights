@@ -15,9 +15,9 @@ struct TrafficLightState: AsyncSequence, AsyncIteratorProtocol {
     
     private(set) var currentLight: TrafficLight
     private(set) var targetLight: TrafficLight
-    private let timingConfiguration: TrafficLightsTimingConfiguration
+    private let timingConfiguration: LightTimingConfiguration
     
-    init(timingConfiguration: TrafficLightsTimingConfiguration = TrafficLightsTimingConfiguration()) {
+    init(timingConfiguration: LightTimingConfiguration = TrafficLightsTimingConfiguration()) {
         self.timingConfiguration = timingConfiguration
         self.currentLight = .red
         self.targetLight = .green
@@ -32,7 +32,7 @@ struct TrafficLightState: AsyncSequence, AsyncIteratorProtocol {
         
         let duration = self.timingConfiguration.duration(forLight: self.currentLight)
         
-        try? await Task.sleep(nanoseconds: UInt64(duration) * 1_000_000_000)
+        try? await Task.sleep(nanoseconds: UInt64(duration * 1_000_000_000))
         
         switch self.currentLight {
         case .red, .green:

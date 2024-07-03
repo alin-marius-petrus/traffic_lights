@@ -80,9 +80,9 @@ private extension CarModelViewController {
     }
     
     func addConstraints() {
-        self.textView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, 
+        self.textView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor,
                                                constant: 32.0).isActive = true
-        self.textView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,
+        self.textView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor,
                                                 constant: -32.0).isActive = true
         self.textView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor,
                                            constant: 32.0).isActive = true
@@ -110,4 +110,5 @@ extension CarModelViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         self.viewModel.updateModelName(textView.text)
     }
+    
 }

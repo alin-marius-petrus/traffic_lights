@@ -30,7 +30,7 @@ final class TrafficLightsCoordinator: NSObject, Coordinator {
         
         super.init()
         
-        let carModelVC = factory.viewController(forRoute: .carModel, withCoordinator: self)
+        let carModelVC = factory.viewController(forRoute: .carModel, withRouter: self)
         self.navigationController = UINavigationController(rootViewController: carModelVC)
         
         self.navigationController.delegate = self
@@ -53,7 +53,7 @@ final class TrafficLightsCoordinator: NSObject, Coordinator {
             self.navigationController.viewControllers.removeLast(difference)
             self.navigationPath.removeLast(difference)
         } else {
-            let viewController = self.factory.viewController(forRoute: route, withCoordinator: self)
+            let viewController = self.factory.viewController(forRoute: route, withRouter: self)
             self.navigationController.pushViewController(viewController, animated: true)
         }
     }
