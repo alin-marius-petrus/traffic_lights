@@ -147,6 +147,26 @@ final class CarDetailViewModelTests: XCTestCase {
         
         await fulfillment(of: [expected], timeout: 0.1)
     }
+    
+    func testDefaultSetup() async {
+        let expected = expectation(description: "Validator uses 3 characters for validation")
+        
+        let viewModel = CarDetailViewModel(router: self.mockRouter)
+        
+        viewModel.$state
+            .sink { newValue in
+                // if both valid test should fail due to multiple fulfill counts
+                if newValue.isValid {
+                    expected.fulfill()
+                }
+            }
+            .store(in: &self.disposables)
+        
+        viewModel.updateModelName("On")
+        viewModel.updateModelName("Off")
+        
+        await fulfillment(of: [expected], timeout: 0.1)
+    }
 
 }
 // swiftlint:enable implicitly_unwrapped_optional

@@ -57,5 +57,12 @@ final class CarModelNameCountValidatorTests: XCTestCase {
         XCTAssertTrue(self.sut.isValidName("On"))
     }
     
+    func testDefaultValidator() {
+        let validator = CarModelNameCountValidator()
+        
+        XCTAssertFalse(validator.isValidName("On"))
+        XCTAssertTrue(validator.isValidName("Off"))
+    }
+    
 }
 // swiftlint:enable implicitly_unwrapped_optional
