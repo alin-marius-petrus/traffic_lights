@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A7BC4042C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BC4032C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift */; };
 		6A7EA72B2C33ED3600D083C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA72A2C33ED3600D083C3 /* AppDelegate.swift */; };
 		6A7EA72D2C33ED3600D083C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EA72C2C33ED3600D083C3 /* SceneDelegate.swift */; };
 		6A7EA7342C33ED3900D083C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7EA7332C33ED3900D083C3 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A7BC4032C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsTimingConfiguration.swift; sourceTree = "<group>"; };
 		6A7EA7272C33ED3600D083C3 /* TrafficLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7EA72A2C33ED3600D083C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7EA72C2C33ED3600D083C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				6A7EA76C2C33FC8900D083C3 /* CarModelNameCountValidator.swift */,
 				6A7EA76E2C33FD8500D083C3 /* CarModelNameValidator.swift */,
 				6A7EA7902C3427DF00D083C3 /* TrafficLightState.swift */,
+				6A7BC4032C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				6A7EA7692C33F99E00D083C3 /* CarModel.swift in Sources */,
 				6A7EA76D2C33FC8900D083C3 /* CarModelNameCountValidator.swift in Sources */,
 				6A7EA7992C34463600D083C3 /* UIColor+Helpers.swift in Sources */,
+				6A7BC4042C352C7C006D2045 /* TrafficLightsTimingConfiguration.swift in Sources */,
 				6A7EA7502C33F1CD00D083C3 /* TrafficRoute.swift in Sources */,
 				6A7EA72D2C33ED3600D083C3 /* SceneDelegate.swift in Sources */,
 				6A7EA7712C34053100D083C3 /* TrafficLightsRouter.swift in Sources */,

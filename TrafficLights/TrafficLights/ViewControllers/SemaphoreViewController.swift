@@ -76,9 +76,9 @@ private extension SemaphoreViewController {
                                                     constant: 64.0).isActive = true
         self.trafficLightsView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor,
                                                        constant: -64.0).isActive = true
-        self.trafficLightsView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,
+        self.trafficLightsView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor,
                                                         constant: 16.0).isActive = true
-        self.trafficLightsView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,
+        self.trafficLightsView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor,
                                                          constant: -16.0).isActive = true
     }
 }
